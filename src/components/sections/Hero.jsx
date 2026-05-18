@@ -151,7 +151,7 @@ export function Hero() {
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             >
               <img 
-                src="/asset_images/avatar.jpeg" 
+                src="./asset_images/avatar.jpeg" 
                 alt="Evan Arya Saputra" 
                 className="w-full h-full object-cover object-top"
               />

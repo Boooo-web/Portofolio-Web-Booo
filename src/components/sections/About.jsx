@@ -143,7 +143,7 @@ export function About() {
               transition={{ duration: 0.3 }}
             >
               <img 
-                src="/asset_images/avatar.jpeg" 
+                src="./asset_images/avatar.jpeg" 
                 alt="Evan Arya Saputra" 
                 className="w-full h-full object-cover min-h-[400px]"
               />

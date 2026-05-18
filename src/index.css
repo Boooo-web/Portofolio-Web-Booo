@@ -35,7 +35,7 @@
 }
 
 html.light body {
-  background-image: url('/asset_images/white.jpeg');
+  background-image: url('../asset_images/white.jpeg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -84,7 +84,7 @@ body {
   min-height: 100vh;
   background: var(--page-bg);
   color: var(--text-color);
-  background-image: url('/asset_images/black.jpeg');
+  background-image: url('../asset_images/black.jpeg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
