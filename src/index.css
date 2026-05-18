@@ -4,11 +4,71 @@
   font-size: 16px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
-  color: #f8fafc;
-  background: #000000;
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --page-bg: #000000;
+  --text-color: #f8fafc;
+  --surface-bg: #111827;
+  --card-bg: #111827;
+  --muted-text: #9ca3af;
+  --border-color: #374151;
+  --panel-bg: #1f2937;
+  --input-bg: #111827;
+  --input-border: #374151;
+  --surface-rgb: 17, 24, 39;
+}
+
+.light {
+  color-scheme: light;
+  --page-bg: #f8fafc;
+  --text-color: #111827;
+  --surface-bg: #ffffff;
+  --card-bg: #f8fafc;
+  --muted-text: #6b7280;
+  --border-color: #d1d5db;
+  --panel-bg: #f3f4f6;
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --surface-rgb: 255, 255, 255;
+}
+
+html.light body {
+  background-image: url('/asset_images/white.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.theme-bg {
+  background: var(--page-bg);
+  color: var(--text-color);
+}
+
+.theme-surface {
+  background: var(--surface-bg);
+  color: var(--text-color);
+}
+
+.theme-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.theme-muted {
+  color: var(--muted-text);
+}
+
+.theme-border {
+  border-color: var(--border-color);
+}
+
+.theme-input {
+  background: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--text-color);
 }
 
 * {
@@ -22,9 +82,14 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #000000;
-  color: #f8fafc;
+  background: var(--page-bg);
+  color: var(--text-color);
+  background-image: url('/asset_images/black.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
+
 
 #root {
   min-height: 100vh;
@@ -56,4 +121,42 @@ h6 {
 
 ::selection {
   background: rgba(16, 185, 129, 0.2);
+}
+
+/* Light mode legibility fixes */
+.light .text-white {
+  color: #10b981 !important;
+}
+
+.light .hover\:text-white:hover {
+  color: #10b981 !important;
+}
+
+.light .text-gray-300 {
+  color: #4b5563 !important;
+}
+
+.light .text-gray-400,
+.light .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.light .bg-gray-900 {
+  background-color: var(--surface-bg) !important;
+}
+
+.light .bg-gray-800 {
+  background-color: var(--panel-bg) !important;
+}
+
+.light .bg-black\/60 {
+  background-color: rgba(255, 255, 255, 0.48) !important;
+}
+
+.light .border-white\/10 {
+  border-color: rgba(209, 213, 219, 0.35) !important;
+}
+
+.light .border-gray-600 {
+  border-color: #d1d5db !important;
 }

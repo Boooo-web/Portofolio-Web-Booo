@@ -7,12 +7,12 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t border-white/10 bg-black">
+    <footer className="border-t theme-border theme-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           {/* Left */}
           <div className="text-center md:text-left">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm theme-muted">
               © 2024 Evan Arya Saputra. All rights reserved.
             </p>
           </div>
